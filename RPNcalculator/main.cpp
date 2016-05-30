@@ -1,6 +1,5 @@
 #include "stack.h"
 
-
 string InfixToPostfix(string expression);
 double postfixEvaluation(string pfix);
 bool HasHigherPrecedence(char operator1, char operator2);
@@ -13,9 +12,9 @@ int main(int argc, const char * argv[])
 {
     string infix,postfix;
     double result;
-//    cout<<"Enter an infixed expression:- ";
-//    cin>>infix;
-    infix="2^3+5-13/4";
+    cout<<"Enter an infixed expression:- ";
+    cin>>infix;
+    //infix="2^3+5-13/4";
     postfix=InfixToPostfix(infix);
     cout<<"\nPostfix expression:- "<<postfix;
     result=postfixEvaluation(postfix);
