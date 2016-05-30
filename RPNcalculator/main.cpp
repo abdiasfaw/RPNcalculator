@@ -14,7 +14,6 @@ int main(int argc, const char * argv[])
     double result;
     cout<<"Enter an infixed expression:- ";
     cin>>infix;
-    //infix="2^3+5-13/4";
     postfix=InfixToPostfix(infix);
     cout<<"\nPostfix expression:- "<<postfix;
     result=postfixEvaluation(postfix);
